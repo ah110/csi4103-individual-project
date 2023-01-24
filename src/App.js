@@ -39,7 +39,7 @@ playerSeasomHandleChange = (event) => {
       if(res.data.data[0] === undefined){
         alert("This player is either injured or hasn't played season "+this.state.season)
       } else if(res.data.data.length > 1){
-        alert("Pleases specify the name more!")
+        alert("Please specify the name more!")
       } else{
         await this.getPlayerStats(res.data.data[0].id)
 

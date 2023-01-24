@@ -18,7 +18,7 @@ handleSubmit = (e) => {
   console.log(this.state.playerName)
 }
 
-playerNameHandleChange = (event) => {
+playerNameHandleChange = (event) => {//handle for season input from user, if emoty use current season
   const replace = event.target.value.split(" ").join("_");
   if(replace.length > 0){
     this.setState({playerName: replace})
@@ -49,7 +49,7 @@ playerSeasomHandleChange = (event) => {
     })
   }
 
-  getPlayerStats = (playerId) => {
+  getPlayerStats = (playerId) => {// get player stats base on season and name
     axios.get(`https://www.balldontlie.io/api/v1/season_averages?season=${this.state.season}&player_ids[]=${playerId}`)
     .then(async res => {
       if(res.data.data[0] === undefined){
@@ -64,7 +64,8 @@ playerSeasomHandleChange = (event) => {
     })
   }
   
-  render(){
+  render(){//HTML-create table and add more field into the table
+    //add season input for checking player different season
   return (
     <div className="App">  
      <form onSubmit={this.handleSubmit}>

@@ -1,3 +1,6 @@
+ 
+ /*add css for the web page*/
+ 
  td,  th {
 	border: 1px solid #ddd;
 	padding: 8px;
@@ -24,9 +27,7 @@
   h2{
 	text-transform: uppercase;
   }
-  label{
-	text-shadow: #000403;
-  }
+
 
   body  {
 	background-image: url("D:\csi4103\nba_project\kobe.png");

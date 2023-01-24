@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from "axios";
+import './App.css';
 
 class App extends Component {
   constructor(props){
@@ -81,9 +82,10 @@ playerSeasomHandleChange = (event) => {
   <input type="number" id="season"  min="1979" max="2022" value={this.state.season} onChange={this.playerSeasomHandleChange}></input>
        <input type="submit" value="Submit"/>
      </form>
-     <table class="w3-table-all w3-margin-top" id="myTable">
+     <h2>{this.state.playerName}</h2>
+     <table>
     <tr>
-      <th >{this.state.playerName}</th>
+      <th >Stats</th>
       <th >Season Average</th>
     </tr>
     <tr>
@@ -135,6 +137,7 @@ playerSeasomHandleChange = (event) => {
       <td>{this.state.playerStats["ft_pct"]}</td>
     </tr>
   </table>
+  
 
     
     </div>

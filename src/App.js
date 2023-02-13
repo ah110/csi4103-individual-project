@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import axios from "axios";
-import './player.css';
+import './App.css';
 
-class player extends Component {
+class App extends Component {
   constructor(props){
     super(props)
     this.state={
@@ -168,4 +168,4 @@ class player extends Component {
   );
 }
 }
-export default player;
+export default App;

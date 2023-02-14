@@ -19,7 +19,9 @@ class player extends Component {
   }
   componentDidMount() {
     // here you have the id
-    if(this.props.id){
+    if(this.props.id==0){
+    }
+    else if(this.props.id){
     const id = this.props.id;
     this.getPlayerStats(id);
     this.getPlayerFullName(id);
@@ -123,7 +125,11 @@ class player extends Component {
   return (
     
     <div className="App">  
-
+     <button style={{ position: 'absolute', top: '0', left: '0' }}>
+  <Link to={{ pathname: "/" }}>
+    Player Rank
+  </Link>
+</button>
        <label>
             Player Name
          <input 

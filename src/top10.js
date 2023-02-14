@@ -117,6 +117,8 @@ class Top10 extends Component {
         
             return (
               <div>
+                <button> <Link to={{ pathname: "/player/0" }}>Player Search
+                </Link></button>
              <form onSubmit={this.handleSubmit}>
           <DatePicker
             selected={this.state.startDate}

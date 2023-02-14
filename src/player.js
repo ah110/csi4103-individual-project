@@ -103,6 +103,7 @@ class player extends Component {
       }  else{
         this.getPlayerFullName(suggestion.id);
         this.setState({ playerStats: res.data.data[0]});
+        this.setState({season:2022});
         this.setState({ showPlayerStats: true });
       }
     }).catch(err => {

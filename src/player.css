@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("D:\csi4103\nba_project\kobe.png");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top10-players {
+  margin: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.date-picker {
+	display: inline-block;
+	margin-right: 10px;
+  }
+  
+  .date-picker input {
+	padding: 10px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  .top10-select {
+	padding: 10px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-right: 10px;
+  }
+  
+  .top10-button {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: 1px solid #007bff;
+	border-radius: 4px;
+	font-size: 14px;
+	cursor: pointer;
+  }
+
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #000403;
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+
+
+input[type=text],
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.playeraverage {
+  margin: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #000403;
+  margin-top: 40px;
+}

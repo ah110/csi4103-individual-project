@@ -15,7 +15,6 @@ class App extends Component {
         </Routes>
       </Router>
     );
+    }
   }
-}
-
 export default App;
